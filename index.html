@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>红红</title>
+</head>
+
+<script type="text/javascript">
+    window.onload = function(){
+        var index = 0;
+        var video = document.getElementById("videoID");
+            video.onended = function() 
+            {
+                if(index){
+                    index = 0;
+                    video.src="video/dbafc0ff2c109cbb0aedd67399ca28.mp4";
+                }else{
+                    index = 1;
+                    video.src="video/dbafc0ff2c109cbb0aedd67399ca28.mp4";
+                }        
+            };
+    }
+    
+</script>
+
+<style>
+    #videoID{
+        width: 40%;
+    }
+</style>
+<body>
+<video id="videoID" src="video/dbafc0ff2c109cbb0aedd67399ca28.mp4" autoplay controls="controls" ></video>
+</body>
+
+
+</html>
